@@ -1,0 +1,57 @@
+:root {
+    --yellow: yellow;
+    --orange: orange;
+    --black: black;
+}
+
+html {
+    box-sizing: border-box;
+    font-weight: 400;
+    color: var(--black);
+}
+
+body {
+    background: linear-gradient(to right, var(--orange), var(--black));
+    margin: 20px;
+}
+
+.top {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "party party cta1"
+    "party party cta2"
+}
+
+.party {
+    grid-area: party;
+    min-height: 500px;
+    max-width: 540px;
+    background-image: url('../img/pumpkin.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta {
+    background: var(--yellow);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.cta1 {
+    grid-area: cta1;
+}
+
+.cta2 {
+    grid-area: cta2;
+}
+
+.price {
+    font-size: 2.5rem;
+}
+
+.cta.p {
+    margin: 0;
+}
