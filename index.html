@@ -69,14 +69,19 @@
         <img src="https://source.unsplash.com/random/208x208" alt="">
         <img src="https://source.unsplash.com/random/209x209" alt="">
         <img src="https://source.unsplash.com/random/210x210" alt="">
+        <img src="https://source.unsplash.com/random/211x211" alt="">
+        <img src="https://source.unsplash.com/random/212x212" alt="">
+        <img src="https://source.unsplash.com/random/213x213" alt="">
+        <img src="https://source.unsplash.com/random/214x214" alt="">
+        <img src="https://source.unsplash.com/random/215x215" alt="">
       </div>
     <script>
       const  menuButton = document.querySelector('button[aria-expanded]');
-      console.log(menuButton);  
 
-      function toggleMenu(target){
+      function toggleMenu({target}){
         const expanded = target.getAttribute('aria-expanded') === 'true' || false;
         menuButton.setAttribute('aria-expanded', !expanded);
+        console.log("Aria Expanded value: ", expanded);
         console.log("Toggled");
       }
 
